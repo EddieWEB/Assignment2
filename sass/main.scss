@@ -1,9 +1,14 @@
 * {
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
 }
 
-body {
-    background-color: aquamarine;
-}
+@import "_variables.scss";
+@import "_button.scss";
+@import "_body.scss";
+@import "_header.scss";
+@import "_inputAndSubmit.scss";
+@import "_mainElement.scss";
+@import "_list.scss";
+@import "_output.scss";
+@import "_total.scss";

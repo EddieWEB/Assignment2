@@ -1,0 +1,25 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin margin {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+@mixin color {
+    background-color: $totalColor;
+}
+
+#total {
+    @include flexCenter();
+    border: solid purple 3px;
+}
+
+#totalNumber{
+    @include margin();
+    @include color();
+    border: solid blue 2px;
+}

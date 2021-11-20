@@ -1,0 +1,31 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin margin {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+@mixin color {
+    background-color: $outputColor;
+}
+
+#output {
+    @include flexCenter();
+    border: solid purple 3px;
+}
+
+#outputOne{
+    @include margin();
+    @include color();
+    border: solid blue 2px;
+}
+
+#outputTwo{
+    @include margin();
+    @include color();
+    border: solid red 2px;
+}
